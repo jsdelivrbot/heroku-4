@@ -4,14 +4,14 @@ const router = module.exports = new Router;
 
 router.get('/', (ctx, next) => {
     try {
-        ctx.body = "Привет мам!";
+        ctx.body = "Всем привет!";
     } catch (e){
         console.error(e.message);
     }
     })
     .get('/:part', (ctx, next) => {
         try {
-            ctx.render(`${ctx.params.part}/index`);
+            ctx.body(`Hello, my dear friend ${ctx.params.part}`);
         } catch (e) {
             ctx.body = "Нет такой страницы";
         }
