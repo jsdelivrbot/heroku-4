@@ -11,12 +11,13 @@
     "test": "node test.js"
   },
   "dependencies": {
+    "imagelib": "0.0.1",
     "koa": "^2.5.3",
     "koa-bodyparser": "",
     "koa-pug": "^3.0.0-2",
     "koa-router": "",
     "koa-static": "^5.0.0",
-    "imagelib": "0.0.1",
+    "redis": "^2.8.0",
     "snapsvg": "^0.5.1",
     "zlib": "^1.0.5"
   },

@@ -4,7 +4,7 @@ const router = module.exports = new Router;
 
 router.get('/', (ctx, next) => {
     try {
-        ctx.body = "hello";
+        ctx.body = "Привет мам!";
     } catch (e){
         console.error(e.message);
     }
