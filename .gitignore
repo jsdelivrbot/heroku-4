@@ -3,6 +3,9 @@ node_modules
 npm-debug.log
 src
 
+# Gulp
+gulpfile.js
+
 # Local development
 *.env
 *.dev
