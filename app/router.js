@@ -11,7 +11,7 @@ router.get('/', (ctx, next) => {
     })
     .get('/:part', (ctx, next) => {
         try {
-            ctx.body(`Hello, my dear friend ${ctx.params.part}`);
+            ctx.body = `Hello, my dear friend ${ctx.params.part}`;
         } catch (e) {
             ctx.body = "Нет такой страницы";
         }
