@@ -1,10 +1,12 @@
-const express = require('express')
+const Koa = require('koa'),
+  app = new Koa();
+const router = require('./app/router');
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+app.use(router.allowedMethods());
+app.use(router.routes());
+
+
+app.listen(3000);
+console.log(`Server ready on port: ${PORT}\n`);

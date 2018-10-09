@@ -1,7 +1,7 @@
 {
   "name": "node-js-getting-started",
   "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "A sample Node.js app using Koa 2",
   "engines": {
     "node": "8.9.1"
   },
@@ -11,10 +11,30 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "koa": "^2.5.3",
+    "koa-bodyparser": "",
+    "koa-pug": "^3.0.0-2",
+    "koa-router": "",
+    "koa-static": "^5.0.0",
+    "imagelib": "0.0.1",
+    "snapsvg": "^0.5.1",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-useref": "^3.1.5",
     "request": "^2.81.0",
     "tape": "^4.7.0"
   },
@@ -25,7 +45,7 @@
   "keywords": [
     "node",
     "heroku",
-    "express"
+    "koa"
   ],
   "license": "MIT"
 }
