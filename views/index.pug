@@ -1,0 +1,73 @@
+doctype html
+head
+    block head(title= "Язык", css= "css/style.css")
+        meta(charset="utf-8")
+        title #{title}
+        link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+        link(rel="apple-touch-icon", href="favicon.png")
+        if typeof css == "string"
+            link(rel="stylesheet", href= css)
+        if Array.isArray(css)
+            for p in css
+                link(rel="stylesheet", href= p)
+            
+body
+    block header
+        header
+            #firsticon
+                img(js="mystyle.svg", alt="№")
+            if nav
+                #headnav
+                    nav
+                        ul
+                            for p in nav
+                                li
+                                    a(href= p.href) #{p.name}
+                            
+            #headsearch
+                input(type="text", name="")
+            #headlogin
+                .log.in
+    block main
+        main
+            #column_sitemap.hide
+                #embed_tabcontent
+                #list_anchors.listening
+                    ul
+                        li: a(href="#post_science_news_123num") Планета нибиру впервые сфотографирована!
+                        li: a(href="#post_animals_news_021num") Пингвины начали миграцию. Видео
+                        li.active: a(href="#post_science_interesfacts_137num") Что говорили предки про Нибиру
+                        li: a(href="#post_design_news_425num") Тенценции дизайна приложений 2025
+                        li: a(href="#post_science_news_126num") Спутник зафиксировал планету Нибиру
+            block posts
+                #column_posts.random
+                    #post_science_news_123num.ready
+                        h3 Планета нибиру впервые сфотографирована!
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ipsum recusandae excepturi commodi quidem molestias unde odit maxime veniam laboriosam natus, necessitatibus quibusdam sunt voluptatibus? Debitis dignissimos nobis vitae non!
+                    #post_animals_news_021num.ready
+                        h3 Пингвины начали миграцию. Видео
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod voluptatem assumenda dolores at quia a quidem itaque aliquam dolore dolorum! Maiores consequatur similique perferendis asperiores odit, dolore ipsam nesciunt reprehenderit.Distinctio cupiditate consequuntur eligendi incidunt architecto pariatur enim ut vero, ex eum cum magni repellendus quae tempore sint quod placeat ipsam nihil hic. Doloremque, cumque asperiores consectetur mollitia alias provident!Modi, deserunt. Ipsa sit facilis magni non voluptate beatae velit at eveniet ut, ea quis consequuntur a? Quaerat, repudiandae. Nemo eveniet sit dolorem tempore optio facilis eaque quidem maiores accusamus?Voluptatum beatae tenetur excepturi quas officiis voluptatem voluptas molestias, ullam tempora dicta accusamus facilis nisi doloribus eos amet temporibus numquam commodi est totam similique reprehenderit itaque consequatur! Tenetur, error molestiae.A animi atque dolorum, libero dignissimos nemo doloremque enim illo, eius recusandae totam at perferendis, et quidem? Quibusdam unde labore itaque necessitatibus totam cupiditate, facilis quis molestias, pariatur magnam quas!Suscipit consequuntur, cumque, repellat accusamus possimus nulla perspiciatis, nostrum corrupti sint eius minus. Corporis, minima sint! Hic voluptatem ipsa reprehenderit eaque deleniti sequi facere, eligendi, suscipit, dolores quisquam cum quaerat.Quisquam hic facilis adipisci quasi velit quidem accusantium, aliquam dolor. Laudantium voluptates consectetur voluptatem quaerat illo, temporibus laborum, omnis inventore assumenda alias ad, sapiente nemo. Tenetur sapiente corporis odit officia.Magni reiciendis quod nesciunt dolorem, ut vero voluptate sed aliquam? Eum corrupti, minima veritatis itaque aut consectetur? Deleniti animi nostrum nisi corporis commodi deserunt officiis similique? Optio maiores odit veniam!Fuga autem dolore dicta porro nulla ducimus perferendis vel ratione officia consequatur sapiente aliquid accusamus explicabo eum aspernatur ex sunt, tenetur nobis id reiciendis! Sequi debitis iusto delectus perferendis at.Error sequi rem facilis, voluptatem natus possimus, id temporibus aperiam a, tempora sunt. Possimus harum quibusdam ea laboriosam qui fugiat, soluta inventore sequi nisi alias dolorum doloribus voluptate corporis dicta.Id soluta totam possimus inventore adipisci. Architecto doloribus corporis, quos laudantium ea, earum optio est deleniti adipisci officia aperiam, vel ratione repellendus? Quae a consequuntur maxime. Culpa quam modi vel?Quibusdam nam fugit id, nisi aliquid molestias alias aliquam sequi beatae libero! Libero cupiditate autem eius sequi amet itaque laboriosam dolores vel vitae harum, fugiat perferendis, reiciendis deleniti minima officiis.Quibusdam, iusto quos eaque temporibus fuga consequatur sequi odio, voluptas debitis error nobis pariatur? Amet voluptas optio aspernatur delectus fugiat? Ipsa dignissimos rem minus eligendi fuga temporibus, alias sit sunt.Doloremque mollitia provident tempora ipsum. Et quas harum architecto est iusto facere hic id. Odio error laborum, architecto consequatur saepe provident ullam quia incidunt sint perferendis excepturi repellat explicabo sapiente.Accusantium obcaecati nisi esse est dolorem sapiente, inventore quibusdam explicabo tempora quaerat quae delectus sit porro eum maxime! Porro nam minus incidunt esse unde iusto harum ut facilis reprehenderit praesentium!Culpa incidunt nisi commodi asperiores voluptatem maiores placeat quidem, voluptas aut! Sapiente, nemo hic ea, recusandae doloremque impedit odit facere eveniet nobis totam dolores minima? Ipsum dolore ad quidem quia.Repudiandae, nemo? Minima iure sint fugit perspiciatis quisquam reprehenderit iste qui tempore neque voluptas praesentium animi necessitatibus dolore nesciunt, ab labore consectetur! Illum molestiae odit vero aliquam ipsa ea mollitia?Facere officiis dolore minus non, suscipit neque eaque corporis doloribus cum dolores? Quidem quaerat neque excepturi reprehenderit deleniti harum saepe cupiditate in, voluptatem velit. Accusamus, optio! Possimus atque exercitationem minus!Soluta molestiae beatae tempora repellendus quibusdam necessitatibus, aut obcaecati odit id incidunt quod temporibus a atque earum nam minima quaerat cum non voluptatem vitae deleniti vero totam? Consectetur, quasi laborum!Voluptate voluptatibus maiores saepe perferendis explicabo, necessitatibus aut! Modi sunt laboriosam ab eaque commodi! Labore fuga placeat natus, iste temporibus numquam eos quod saepe dignissimos alias optio, iure harum impedit!
+                    #post_science_interesfacts_137num.onread
+                        h3 Что говорили предки про Нибиру
+                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perferendis sunt maiores adipisci! Delectus nam at tempore fuga id porro illo cumque dolorem ratione necessitatibus, sapiente modi, alias eaque autem!Maxime blanditiis, dignissimos dolore unde laudantium modi pariatur. Numquam aut accusamus odit debitis velit eaque atque amet culpa. Placeat atque sed cum similique. Neque quaerat pariatur laboriosam deserunt, ipsum accusantium.Fugiat voluptatem minima molestias autem nihil, amet dolore perspiciatis adipisci quia, odio magnam officiis obcaecati nemo fugit dicta minus quis. Porro, voluptas tenetur blanditiis esse ad neque officiis possimus rerum.At vel, exercitationem facere maxime nemo ducimus nostrum dolorem sequi velit nesciunt commodi reiciendis iure iusto nobis eaque officia adipisci saepe repellendus assumenda repellat! Iste illum sed fugiat quisquam accusantium.Itaque tenetur hic soluta. Corporis quia ex modi quis cupiditate, itaque quo. Earum porro debitis, suscipit ipsa expedita distinctio eos dolore repellendus sed voluptatum tempora laboriosam consectetur fugiat consequatur quaerat.
+                    #post_design_news_425num.noread
+                        h3 Тенценции дизайна приложений 2025
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, magnam?
+                    #post_science_news_126num.noread
+                        h3 Спутник зафиксировал планету Нибиру
+                        p Lorem ipsum dolor sit amet.
+            #column_rblock.waiting
+                #adb_yandex_id32794874.done
+                #adb_yandex_id33545566.done
+                #adb_yandex_id32344546.done
+    block footer
+        footer
+            #infoblock_map.yandex
+
+            #infoblock_contacts.animate
+    block js(js)
+        if typeof js == "string"
+            script(src= js)
+        if Array.isArray(js)
+            for p in js
+                script(js= p)

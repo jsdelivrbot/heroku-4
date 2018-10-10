@@ -1,0 +1,47 @@
+extends ../index
+block main
+  section#text
+    div
+      h3 #{obj}
+  section#app
+    div#svg
+      svg#svgapp(viewbox="0 0 500 400")
+        circle(cx="102" cy="102" r="20" fill="rgb(204,204,204)" stroke-width="10" stroke="rgb(100,100,100)")
+        circle(cx="202" cy="102" r="20" fill="rgb(204,204,204)" stroke-width="10" stroke="rgb(100,100,100)")
+        polyline(points="0,0 150,0 150,100 250,100 300,150" fill="none" stroke-width="1" stroke="rgb(0,0,0)")
+        polyline(points="0,0 50,10 150,150 250,150 300,150" fill="none" stroke-width="1" stroke="rgb(0,0,0)")
+        polyline(points="200 30,210 30,210 40,220 42,225 32, 235 37,230 47,237 54,246 50,250 60" fill="none" stroke-width="2" stroke="rgb(0,0,0)")
+        
+        line(x1="150" y1="50" x2="100" y2="200" stroke-width="2" stroke="rgb(0,0,0)")
+     
+      //-     <g targetVal="targetVal" class="xaxis">
+      //-       <text x="-18" y="18">0</text>
+      //-       <line x1="0" y1="1" v-bind="{'x2': lineWidth}"  y2="1" />
+      //-       <g v-for="(n,index) in axisValues">
+      //-         <line y1="0" y2="7" v-bind="{'x1': index*10, 'x2': index*10}" />
+      //-         <text v-if="index != 0 && index % 5 === 0" v-bind="{'x': (n == 1) ? ((index-1)*10)+5 : ((index-1)*10)-5, 'y':20}">{{ (n == 0 || n == 1) ? n : n.toFixed(1) }}</text>
+      //-       </g>
+      //-     </g>
+      //-     <!-- yaxis -->
+      //-     <g targetVal="targetVal" class="yaxis">
+      //-       <line x1="0" y1="1" v-bind="{'x2': lineWidth}"  y2="1" />
+      //-       <g v-for="(n,index) in yaxisValues">
+      //-         <line y1="0" y2="7" v-bind="{'x1': index*10, 'x2': index*10}" />
+      //-         <text v-if="index != axisValues.length-1 && index % 5 === 0" v-bind="{'x': (n == 0 || n == 1) ? ((index-1)*10)+5 : ((index-1)*10)-5, 'y':20}">{{ (n == 0 || n == 1) ? n : n.toFixed(1) }}</text>
+      //-       </g>
+      //-     </g>
+      //-     <!-- Points -->
+      //-     <g class="points">
+      //-       <g v-for="(point,index) in normalizedSet" v-bind:class="'point ' + (!!point.reveal ? 'reveal' :'hide') ">
+      //-         <circle v-bind="{'r':point.r,'cx':point.x1*lineWidth,'cy':-point.x2*lineWidth,'style': 'fill:' + (point.cat ? '#00cc00' : '#cc0000')}"/>
+      //-         <text font-size="12" v-bind="{'x':(point.x1 > .8 ? (point.x1*lineWidth - (point.name.length * 7)): point.x1*lineWidth + 10),'y':-point.x2*lineWidth + 3}">{{ point.name }}<text>
+      //-       </g>
+
+      //-       <g v-for="(point,index) in predictedSet" v-bind:class="'point predicted ' + (!!point.reveal ? 'reveal' :'hide') ">
+      //-         <circle v-bind="{'r':point.r,'cx':point.x1*lineWidth,'cy':-point.x2*lineWidth,'style': 'fill:' + (point.cat ? '#00cc00' : '#cc0000')}"/>
+      //-         <text font-size="12" v-bind="{'x': (point.x1 > .8 ? (point.x1*lineWidth - (point.name.length * 7)): point.x1*lineWidth + 10),'y':-point.x2*lineWidth + 3}">{{ point.name }}<text>
+      //-       </g>
+      //-     </g>
+      //-     <g v-if="showLine" class='linear'>
+      //-       <line v-bind="{'x1': lineCoords.x1*lineWidth,'y1': lineCoords.y1*lineWidth,'x2': lineCoords.x2*lineWidth,'y2': lineCoords.y2*lineWidth}" />
+      //-     </g>

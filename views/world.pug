@@ -1,0 +1,35 @@
+extends ./index
+block posts
+    #column_posts.search.ideology
+        #post_ideology_12344.public
+            p Сайт построен на особой, вычурной api, на базе модели 
+            | Запрос() -->
+            | Обработка (Структура[Контекст] --> Логика поведения --> Визуализация ) -->
+            | Ответ()
+            p Каждому id в документе html задаются соответствующие категория и объект в javascript.
+            pre
+                code
+                    =  '<html> ... <body>\n' + '    <div id="content_state012" class="active">\n' + '    ...\n' + '</body></html>\n'
+                    |
+                    | js:
+                    | console.log(content); // 
+                    |    //{
+                    |    //  "childs": {
+                    |    //      "state000":{},
+                    |    //       ... ,
+                    |    //      "state012":{},
+                    |    //  },
+                    |    //  "parent": body,
+                    |    //  "type": "contentblock",
+                    |    //  "methods": {
+                    |    //      ...
+                    |    //  },
+                    |    //  ...
+                    |    //}
+                    | console.log(content.state012.text()); // false -- не содержит текст
+                    | console.log(content.state012.active); // true
+                    | console.log(content.state012.classes); // -- массив строк'
+
+            p Каждому классу соответствует состояние или тип объекта
+            br
+            p 

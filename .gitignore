@@ -10,6 +10,7 @@ gulpfile.js
 *.env
 *.dev
 .DS_Store
+nodemon.json
 
 # Docker
 Dockerfile
