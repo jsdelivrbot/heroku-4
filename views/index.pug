@@ -19,7 +19,7 @@ body#container_barebone
             if nav
                 #headnav
                     nav
-                        ul
+                        ul#links_nav
                             for p in nav
                                 li
                                     a(href= p.href) #{p.name}
@@ -33,7 +33,7 @@ body#container_barebone
             #column_sitemap.hide
                 #embed_tabcontent
                 #list_anchors.listening
-                    ul
+                    ul#links_anchors
                         li: a(href="#post_science_news_123num") Планета нибиру впервые сфотографирована!
                         li: a(href="#post_animals_news_021num") Пингвины начали миграцию. Видео
                         li.active: a(href="#post_science_interesfacts_137num") Что говорили предки про Нибиру

@@ -1,1 +1,1 @@
-[id*=container]{margin:0;padding:0;display:grid}#container_forposts{grid-template-columns:2fr 4fr 1fr}#container_barebone{grid-template-rows:30px auto 200px}
+[id^=container]{display:grid;margin:0;padding:0}#container_barebone{grid-template-rows:150px auto 200px}#container_forposts{grid-template-columns:2fr 4fr 1fr}
