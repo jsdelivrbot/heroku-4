@@ -1,1 +1,1 @@
-@media screen and (max-width:1000px){#container-forposts{grid-template-columns:1fr 3fr}}@media screen and (max-width:600px){#container-forposts{grid-template-columns:auto}}@media screen and (orientation:portrait){#container-backbone{background:red}}
+@media screen and (max-width:1000px){#gridcontainer-forposts{grid-template-columns:1fr 3fr}}@media screen and (max-width:600px){#gridcontainer-forposts{grid-template-columns:auto}}@media screen and (orientation:portrait){#gridcontainer-backbone{background:red}}
