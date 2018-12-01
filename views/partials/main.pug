@@ -1,0 +1,37 @@
+case maintype
+    when "min"
+        main#minimal
+    default    
+        main#gridcontainer-forposts
+            #column_sitemap.hide
+                #embed_tabcontent
+                #list_anchors.listening
+                    ul#links_anchors
+                        li: a(href="#post_science_news_123num") Планета нибиру впервые сфотографирована!
+                        li: a(href="#post_animals_news_021num") Пингвины начали миграцию. Видео
+                        li.active: a(href="#post_science_interesfacts_137num") Что говорили предки про Нибиру
+                        li: a(href="#post_design_news_425num") Тенценции дизайна приложений 2025
+                        li: a(href="#post_science_news_126num") Спутник зафиксировал планету Нибиру
+            block posts
+                #column_posts.random
+                    #icons
+                    #post_science_news_123num.ready
+                        h3 Планета нибиру впервые сфотографирована!
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ipsum recusandae excepturi commodi quidem molestias unde odit maxime veniam laboriosam natus, necessitatibus quibusdam sunt voluptatibus? Debitis dignissimos nobis vitae non!
+                    #post_animals_news_021num.ready
+                        h3 Пингвины начали миграцию. Видео
+                        #video-pingvins.wrap
+                            iframe(src="https://www.youtube.com/embed/jV6OO8QW4YE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+                    #post_science_interesfacts_137num.onread
+                        h3 Что говорили предки про Нибиру
+                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perferendis sunt maiores adipisci! Delectus nam at tempore fuga id porro illo cumque dolorem ratione necessitatibus, sapiente modi, alias eaque autem!Maxime blanditiis, dignissimos dolore unde laudantium modi pariatur. Numquam aut accusamus odit debitis velit eaque atque amet culpa. Placeat atque sed cum similique. Neque quaerat pariatur laboriosam deserunt, ipsum accusantium.Fugiat voluptatem minima molestias autem nihil, amet dolore perspiciatis adipisci quia, odio magnam officiis obcaecati nemo fugit dicta minus quis. Porro, voluptas tenetur blanditiis esse ad neque officiis possimus rerum.At vel, exercitationem facere maxime nemo ducimus nostrum dolorem sequi velit nesciunt commodi reiciendis iure iusto nobis eaque officia adipisci saepe repellendus assumenda repellat! Iste illum sed fugiat quisquam accusantium.Itaque tenetur hic soluta. Corporis quia ex modi quis cupiditate, itaque quo. Earum porro debitis, suscipit ipsa expedita distinctio eos dolore repellendus sed voluptatum tempora laboriosam consectetur fugiat consequatur quaerat.
+                    #post_design_news_425num.noread
+                        h3 Тенценции дизайна приложений 2025
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, magnam?
+                    #post_science_news_126num.noread
+                        h3 Спутник зафиксировал планету Нибиру
+                        p Lorem ipsum dolor sit amet.
+            #column_rblock.waiting
+                #adb_yandex_id32794874.done: p И здесь например реклама всякая
+                #adb_yandex_id33545566.done
+                #adb_yandex_id32344546.done

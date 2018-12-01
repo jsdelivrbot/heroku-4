@@ -1,0 +1,36 @@
+{
+    "pretty": true,
+    "data": {
+                    "nav": [
+            {
+                "name": "Home",
+                "href": "/"
+            },
+            {
+                "name": "Creator",
+                "href": "/creator"
+            },
+            {
+                "name": "Game",
+                "href": "/game"
+            },
+            {
+                "name": "AliRoom",
+                "href": "/aliroom"
+            }
+        ],
+                    "css": [
+            "blocks.css",
+            "elements.css",
+            "containers.css",
+            "columns.css",
+            "media.css",
+            "blocks.css",
+            "tmp/sprite.css"
+        ],
+                    "js": [
+            "script.js",
+            "fetch.js"
+        ]
+    }
+}

@@ -1,1 +1,1 @@
-[id^=column]{display:inline-flex;flex-direction:column;padding:5px}#column_sitemap{background:#345}#column_posts{background:#567;justify-self:center}#column_rblock{background:#789}
+#column{display:inline-flex;flex-direction:column;padding:5px}#column_sitemap{background:#365}#column_posts{background:#567;justify-self:center}#column_rblock{background:#789}

@@ -1,0 +1,30 @@
+{
+    "pug": {
+        "in": "views/index.pug",
+        "out": "public"
+    },
+    "sass": {
+        "in": [
+            "src/sass/**/*.+(sass|scss)",
+            "!src/**/sprite/*.+(sass|scss)"
+        ],
+        "out": "public/css"
+    },
+    "js": {
+        "in": "src/js/*.js",
+        "out": "public/js"
+    },
+    "imgs": {
+        "in": "media/images/**/*.+(jpeg|jpg|png|tiff|webp)",
+        "out": "public/images"
+    },
+    "sprite": {
+        "in": "media/icons/**/*.svg",
+        "out": "public/css"
+    },
+    "clean": [
+        "public/**/*",
+        "!public/images",
+        "!public/images/**/*"
+    ]
+}

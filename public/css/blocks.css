@@ -1,1 +1,1 @@
-header{display:inline-flex}[id^=header]{display:inline-block}[id^=adb]{margin:2px}[id^=video]{position:relative;width:100%}[id^=video] iframe{position:absolute;width:100%;height:100%}#header-nav li{border-radius:10%}#header-nav li:hover{background:#999}
+header{display:inline-flex}[id^=header]{display:inline-block}[id^=adb]{margin:2px}[id^=video]{position:relative;width:100%}[id^=video] iframe{position:absolute;width:100%;height:100%}#header-nav li{border-radius:5px}#header-nav li:hover{background:#999}

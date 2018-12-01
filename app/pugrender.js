@@ -6,7 +6,7 @@ const pug = module.exports = app => new Pug({
     debug: isDev,
     pretty: false,
     compileDebug: isDev,
-    basedir: path.resolve(__dirname, 'views'),
+    basedir: path.resolve('views'),
     app: app
 })
 

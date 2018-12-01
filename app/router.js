@@ -15,6 +15,10 @@ const defopt = {
         {
             name: "Game",
             href: "/game"
+        },
+        {
+            name: "Ali",
+            href: "/ali"
         }
     ],
     css: [
@@ -24,28 +28,43 @@ const defopt = {
         "columns.css",
         "media.css",
         "blocks.css"
+    ],
+    js: [
+        "script.js",
+        "fetch.js"
     ]
 }
 router
     .get('/', async ctx => {
         await ctx.render('index', {
-            js: 'script.js',
+            js: defopt.js,
             css: defopt.css,
             nav: defopt.nav
         })
     })
     .get('/creator', async ctx => {
         await ctx.render('pages/svgcreator', {
+            headertype: "min",
+            footertype: "min",
             nav: defopt.nav,
             css: defopt.css,
-            js: ['svgsreator.js', 'snap.svg.js']
+            js: ["snap.svg-min.js", "svgcreator.js"]
         })
     })
     .get('/game', async ctx => {
         await ctx.render('index', {
-            js: ['svgsreator.js', 'snap.svg.js'],
+            js: ["snap.svg-min.js", "svgcreator.js"],
             css: defopt.css,
-            nav: defopt.nav
+            nav: defopt.nav,
+        })
+    })
+    .get('/aliroom', async ctx => {
+        await ctx.render('pages/aliroom', {
+            headertype: "min",
+            footertype: "min",
+            nav: defopt.nav,
+            css: defopt.css,
+            js: defopt.js
         })
     })
     .get('*', async ctx => {

@@ -1,19 +1,7 @@
 extends ../index
 block main
-  section#text
-    div
-      h3 #{obj}
-  section#app
-    div#svg
-      svg#svgapp(viewbox="0 0 500 400")
-        circle(cx="102" cy="102" r="20" fill="rgb(204,204,204)" stroke-width="10" stroke="rgb(100,100,100)")
-        circle(cx="202" cy="102" r="20" fill="rgb(204,204,204)" stroke-width="10" stroke="rgb(100,100,100)")
-        polyline(points="0,0 150,0 150,100 250,100 300,150" fill="none" stroke-width="1" stroke="rgb(0,0,0)")
-        polyline(points="0,0 50,10 150,150 250,150 300,150" fill="none" stroke-width="1" stroke="rgb(0,0,0)")
-        polyline(points="200 30,210 30,210 40,220 42,225 32, 235 37,230 47,237 54,246 50,250 60" fill="none" stroke-width="2" stroke="rgb(0,0,0)")
-        
-        line(x1="150" y1="50" x2="100" y2="200" stroke-width="2" stroke="rgb(0,0,0)")
-     
+      svg#app(preserveAspectRatio="meet")
+
       //-     <g targetVal="targetVal" class="xaxis">
       //-       <text x="-18" y="18">0</text>
       //-       <line x1="0" y1="1" v-bind="{'x2': lineWidth}"  y2="1" />

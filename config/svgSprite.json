@@ -1,0 +1,20 @@
+{
+    "mode": {
+        "css": {
+            "dest": ".",
+            "bust": false,
+            "sprite": "sprite.svg",
+            "layout": "vertical",
+            "preview": false,
+            "prefix": "=",
+            "dimensions": true,
+            "svgId": "sprite-%f",
+            "render": {
+                "scss": {
+                    "dest": "sprite.scss",
+                    "template": "src/sass/sprite/icons.scss"
+                }
+            }
+        }
+    }
+}

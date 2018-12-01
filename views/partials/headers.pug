@@ -1,0 +1,21 @@
+case headertype
+    when "min"
+        header#minimal
+            a(href= "/") Home
+    default
+        header#flexcontainer
+            #header-icon
+                img(js="mystyle.svg", alt="№")
+            if nav
+                #header-nav
+                    nav
+                        ul#links_nav
+                            for p in nav
+                                li
+                                    a(href= p.href) #{p.name}
+                            
+            #header-search
+                input(type="text", name="")
+            #header-login
+                .log.in
+    
